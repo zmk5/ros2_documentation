@@ -66,7 +66,10 @@ pygments_style = 'sphinx'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
-extensions = ['sphinx.ext.intersphinx']
+extensions = ['sphinx.ext.autosectionlabel', 'sphinx.ext.intersphinx']
+
+
+autosectionlabel_prefix_document = True
 
 # Intersphinx mapping
 
