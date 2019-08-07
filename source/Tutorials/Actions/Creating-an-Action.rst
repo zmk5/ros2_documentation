@@ -77,7 +77,7 @@ We should now be able to build the package containing the "Fibonacci" action def
 We're done!
 
 By convention, action types will be prefixed by their package name and the word ``action``.
-So when we want to refer to our new action, it will have the full name ``action_tutorials/action/Fibonacci``.
+So when we want to refer to our new action, it will have the full name ``action_tutorials_interfaces/action/Fibonacci``.
 
 We can check that our action built successfully with the command line tool:
 
@@ -87,6 +87,6 @@ We can check that our action built successfully with the command line tool:
     # On Windows: call install/setup.bat
     . install/setup.bash
     # Check that our action definition exists
-    ros2 action show action_tutorials/action/Fibonacci
+    ros2 action show action_tutorials_interfaces/action/Fibonacci
 
 You should see the Fibonacci action definition printed to the screen.
