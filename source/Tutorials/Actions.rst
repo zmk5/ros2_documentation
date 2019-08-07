@@ -23,7 +23,7 @@ Prequisites
 
 - `Install colcon <https://colcon.readthedocs.org>`__
 
-- Setup a workspace and create a package named ``action_tutorials``:
+- Setup a workspace and create a package named ``action_tutorials_interfaces``:
 
   Remember to source your ROS 2 installation.
 
@@ -33,7 +33,9 @@ Prequisites
 
       mkdir -p action_ws/src
       cd action_ws/src
-      ros2 pkg create action_tutorials
+      mkdir action_tutorials
+      cd action_tutorials
+      ros2 pkg create action_tutorials_interfaces
 
   Windows:
 
@@ -41,7 +43,9 @@ Prequisites
 
       mkdir -p action_ws\src
       cd action_ws\src
-      ros2 pkg create action_tutorials
+      mkdir action_tutorials
+      cd action_tutorials
+      ros2 pkg create action_tutorials_interfaces
 
 Tutorials
 ---------
