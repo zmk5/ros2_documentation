@@ -25,9 +25,9 @@ We should first add the required dependencies to our ``package.xml``:
 .. code-block:: xml
 
     <depend>action_tutorials_interfaces</depend>
-  	<depend>rclcpp</depend>
-  	<depend>rclcpp_action</depend>
-  	<depend>rclcpp_components</depend>
+    <depend>rclcpp</depend>
+    <depend>rclcpp_action</depend>
+    <depend>rclcpp_components</depend>
 
 We then should set up our dependencies in out ``CMakeLists.txt``:
 
