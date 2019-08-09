@@ -60,3 +60,37 @@ Let's go over the code skeleton and make sure we're setup and ready for writing 
 
 Now we will start writing out functions and get our client up and running
 
+.. literalinclude:: client_1.c++
+	:language: c++
+
+In the constructor, we instantiate ``client_ptr_`` with FILL THIS OUT. We then instantiate ``timer_`` and bind it to the ``send_goal()`` function.
+
+In ``send_goal()``, we first want to see if the server is available, and if not, shutdown the node. If the server is available, we want to prepare the action goal message and send it over the server. We then create our callbacks and add them to ``send_goal_options``, which is then sent to the sever along with the action goal message. After this, we can now fill out our callback functions.
+
+.. literalinclude:: client_2.c++
+	:language: c++
+
+In ``goal_response_callback``, we want to get the respose from the server of whether it's accepted the goal or not. Once we get the response, we check if its  ``NULL`` to see whether its been accepted or not.
+
+In ``feedback_callback``, we are waiting for the ``feedback`` message of the Fibonacci action. Every time we get feedback, it is the next number in the sequence, and we want to not only print out the next number, but also the entire sequence prior to it.
+
+``result_callback`` is what returns to use the final result, once the server has sent back all the number in the Fibonacci sequence and completed the goal. However, since we are not sure if the server aborted or canceled the goal, we have to check for what type of result code we've gotten. If the goal was aborted or canceled, we simply log an error message and exit. If the goal is a success, we print out the entire fibonacci sequence. 
+
+Now that we have written out fibonacci action client, we can now compile and run:
+
+.. code-block:: bash
+	cd ~/action_ws
+	colcon build --packages-up-to action_tutorials_cpp
+
+In another terminal:
+
+..code-block:: bash
+	source ~/action_ws/install/setup.bash
+	ros2 run action_tutorials_cpp fibonacci_action_client
+
+
+
+
+
+
+
