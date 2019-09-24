@@ -74,6 +74,7 @@ Demos
 * `Recording and playback of topic data with rosbag using the ROS 1 bridge <Tutorials/Rosbag-with-ROS1-Bridge>`.
 * `Turtlebot 2 demo using ROS 2 <https://github.com/ros2/turtlebot2_demo>`__.
 * `TurtleBot 3 demo using ROS 2 <http://emanual.robotis.com/docs/en/platform/turtlebot3/applications/#ros2>`__. [community-contributed]
+* `Turtlebot 3 guide for adding namespaces using ROS 2 <https://discourse.ros.org/t/giving-a-turtlebot3-a-namespace-for-multi-robot-experiments/10756?u=zmk5>`__. [community-contributed]
 * `Using tf2 with ROS 2 <Tutorials/tf2>`.
 * `Write real-time safe code that uses the ROS 2 APIs <Tutorials/Real-Time-Programming>`.
 * `Use the rclpy API to write ROS 2 programs in Python <Tutorials/Python-Programming>`.
