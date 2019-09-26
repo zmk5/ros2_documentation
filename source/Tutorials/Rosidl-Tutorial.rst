@@ -101,6 +101,12 @@ Open the ``package.xml``, and uncomment these two lines:
 
 Note that at build time, we need "rosidl_default_generators", while at runtime, we only need "rosidl_default_runtime".
 
+Additionally, add this line above the ``<export>`` section of the ``package.xml``:
+
+.. code-block:: xml
+
+    <member_of_group>rosidl_interface_packages</member_of_group>
+
 Open the ``CMakeLists.txt`` and make sure that the following lines are uncommented.
 
 Find the package that generates message code from msg/srv files:
